@@ -30,7 +30,7 @@ sub new {
 =head1 DESCRIPTION
 
 This module provides a list of English names of countries of the world. You can
-use this module in some word games, e.g. L<Games::Word::Hangman>.
+use this module in some word games, e.g. L<Games::Hangman>.
 
 To produce the list, the latest L<Locale::Codes> during build time is used. The
 shortest names for each country is taken, then converted to lowercase. Thus,
