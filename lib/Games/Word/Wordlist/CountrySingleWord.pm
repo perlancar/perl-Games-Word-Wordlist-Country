@@ -8,13 +8,10 @@ use strict;
 use warnings;
 
 use parent qw(Games::Word::Wordlist);
-
-require Games::Word::Wordlist::Country;
-
-our $COUNTRIES = [grep {/\A\w+\z/} @$Games::Word::Wordlist::Country::COUNTRIES];
+use WordList::EN::CountryNames::SingleWord;
 
 sub new {
-    bless Games::Word::Wordlist->new ($COUNTRIES), shift;
+    bless Games::Word::Wordlist->new ([WordList::EN::CountryNames::SingleWord->new->all_words]), shift;
 }
 
 1;
