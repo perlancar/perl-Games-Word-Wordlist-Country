@@ -1,5 +1,13 @@
 Revision history for Games-Word-Wordlist-Country
 
+0.03    2016-01-13 (PERLANCAR)
+
+	- No functional changes.
+
+	- To avoid duplication of efforts, now source the word list from
+	  WordList::EN::CountryNames.
+
+
 0.02    2014-10-07 (PERLANCAR)
 
 	- No functional changes.
